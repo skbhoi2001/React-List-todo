@@ -20,12 +20,12 @@ function Todo() {
       <TodoInput onSubmit={handleSubmit} />
       {/* by default i only show incomplete */}
       <TodoList data={list.filter((item) => !item.status)} />
-      <div>
+      {/* <div>
         <button onClick={() => setShowComplete(!showComplete)}>
           toggle show complete
         </button>
       </div>
-      {showComplete && <TodoList data={list.filter((item) => item.status)} />}
+      {showComplete && <TodoList data={list.filter((item) => item.status)} />} */}
     </div>
   );
 }
